@@ -9,7 +9,7 @@ struct Stack{
 typedef struct Stack stack;
 
 stack* create(){
-	stack *s = malloc(sizeof(stack));
+	stack *s = (stack*)malloc(sizeof(stack));
 	s->top = -1;
 	s->a = malloc(100*sizeof(int));
 }
